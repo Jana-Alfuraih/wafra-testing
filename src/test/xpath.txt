@@ -1,0 +1,29 @@
+
+--------------find svg-----------
+*[local-name()='svg'])[8]
+---------------inspect DropDawn index-----------
+ select element :
+
+ Select dropdown = new Select(S);
+        dropdown.selectByIndex(12);
+        ----------------------inspect DropDawn Loop-------------------
+             driver.findElement(By.xpath("(//button[@type='button'])[6]")).click();
+                List<WebElement> allOptions = driver.findElements(By.cssSelector(""));
+                for (int i = 0; i < allOptions.size(); i++) {
+                    if (allOptions.get(i).getText().contains("pay for your debt every month")) {
+                        allOptions.get(i).click();
+                        System.out.println("clicked");
+                 }
+
+   --------------------Find Element to DropDawn --------------------------
+   Press the Command + F12 you can show to inspect then appear a list :
+   ***********************
+
+         WebElement button = driver.findElement(By.cssSelector("button[title=Open"));
+          button.click();
+
+          WebElement button = driver.findElement(By.xpath("//button[@title='Open']"));
+          button.click();
+          ----------------------------------------
+
+      ****    - What is your email?
